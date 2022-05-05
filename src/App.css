@@ -1,0 +1,116 @@
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 1em;
+  margin-bottom: 2em;
+  color: #fff;
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  
+}
+
+.header-text {
+  font-size: calc(10px + 2vmin);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.meme-form {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.meme-text {
+  position: relative;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 5%;
+  height: 40px;
+  width: 20%;
+  
+}
+
+.meme > h2 {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 30px 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  
+}
+
+.meme {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.meme > img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.meme > .bottom {
+  bottom: 0;
+}
+
+.meme > .top {
+  top: 0;
+}
+
+.buttonG {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.buttonG::after {
+  content: "";
+  background-color: black;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.buttonG:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 2rem 0;
+  margin-top: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
